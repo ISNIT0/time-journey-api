@@ -27,6 +27,13 @@ router.post('/subscribe/:storyId',
     }),
 );
 
+router.get('/story/:storyId',
+    asyncHandler(async (req, res, next) => {
+        const story = await Story.findOneOrFail(req.params.storyId, { relations: ['messages'] });
+        res.send(story);
+    }),
+);
+
 router.post('/story/:storyId',
     asyncHandler(async (req, res, next) => {
         let story: Story;
