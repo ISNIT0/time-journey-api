@@ -5,6 +5,15 @@ import { MessageQueue } from 'src/models/MessageQueue.model';
 import { StoryMessage } from 'src/models/StoryMessage.model';
 const router = Router();
 
+router.get('/',
+    asyncHandler(async (req, res, next) => {
+        const stories = await Story.find();
+        res.render('home', {
+            stories,
+        });
+    }),
+);
+
 router.post('/subscribe/:storyId',
     asyncHandler(async (req, res, next) => {
         const { phoneNumber } = req.body;

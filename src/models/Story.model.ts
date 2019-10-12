@@ -9,5 +9,6 @@ export class Story extends BaseEntity {
 
     @Column() public title: string;
     @Column() public description: string;
+    @Column({ default: '/missing.png' }) public imageUrl: string;
     @OneToMany((type) => StoryMessage, (sm) => sm.story) public messages: StoryMessage[];
 }
