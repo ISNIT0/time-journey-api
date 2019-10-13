@@ -22,7 +22,7 @@
         async function subscribe(event, id) {
             event.preventDefault();
             let phoneNumber = event.target.querySelector('input[type=tel]').value.replace(/[^0-9]/g, '');
-            if (phoneNumber.startsWith('07')) phoneNumber = '44' + phoneNumber.slice(2);
+            if (phoneNumber.startsWith('07')) phoneNumber = '44' + phoneNumber.slice(1);
             if (!phoneNumber) {
                 alert('Invalid phone number');
                 return;
