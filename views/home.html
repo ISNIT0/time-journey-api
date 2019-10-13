@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Time Journey</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Taviraj&display=swap" rel="stylesheet">
     <script>
         function postJSON(url, data) {
             return fetch(url, {
@@ -34,7 +34,20 @@
 </head>
 
 <body>
-    <img src="/logo.png" alt="" />
+    <div style="text-align: center;max-width:700px;margin:auto;">
+        <img src="/logo.png" alt="" />
+        <p style="font-family: 'Taviraj', serif;">The way we tell stories has changed.<br /><br />
+
+            Time Journey allows you to consume and publish stories in a new way.<br />
+            All the stories on Time Journey exist around time (e.g. historical events, diaries, and prompts).<br />
+            It can be hard to feel the influence of time on stories, but with Time Journey you experience the passage of
+            time the same way the characters do.<br />
+            We hope Time Journey changes the way you consume stories and empathise with others.<br /><br />
+
+            Much Love 💖<br />
+            The Time Journey Team - <a href="https://www.linkedin.com/in/wavecoquet/">Waverley</a>, Nadia, <a
+                href="https://simmsreeve.com/">Joe</a></p>
+    </div>
     <div class="stories">
         {{#each stories}}
         <div class="story">
