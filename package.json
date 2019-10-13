@@ -45,6 +45,7 @@
     "mstranslator": "^3.0.0",
     "nyc": "^14.1.1",
     "pg": "^7.12.1",
+    "smsimple": "^1.0.0",
     "tap-spec": "^5.0.0",
     "telesignsdk": "^2.2.1",
     "ts-loader": "^6.0.0",
