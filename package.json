@@ -34,7 +34,7 @@
     "blue-tape": "^1.0.0",
     "body-parser": "^1.19.0",
     "class-validator": "^0.10.1",
-    "convict": "^5.0.0",
+    "convict": "^6.2.4",
     "cookie-session": "^1.3.3",
     "copy-webpack-plugin": "^5.0.3",
     "dotenv": "^8.0.0",
